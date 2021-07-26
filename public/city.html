@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title>JKH</title>
+
+	<link href="../css/bootstrap.min.css" rel="stylesheet">
+	<link href="../css/chats.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  </head>
+  <body>
+ <script>   
+const intervalIdPulse = setInterval(() => {
+        document.querySelectorAll('.animate__pulse').forEach((item) => {
+          //- console.log('item', item)
+          item.classList.remove('animate__pulse')
+          setTimeout(() => {
+            item.classList.add('animate__pulse')
+          }, 1000)
+        })
+      }, 10000)
+</script>
+<main>
+<div class="container-fluid main_jkh animate__animated animate__fadeIn">
+	<div class="row text-center header">
+		<div class="col-12 logo"></div>
+		<h1 class="h1_style4">БЛАГОУСТРОЙСТВО. ГОРОДСКИЕ СЕРВИСЫ</h1>
+	</div>
+  <div class="row row_jkh">
+    <div class="col-lg-6 leftcolumn">
+		<div class="phone_left">
+			<span>Поиск информации<br/>по инфраструктурным<br/>проектам городского бюджета</span>
+			<img src="../img/phone_girl.png" alt="" class="animate__animated animate__pulse" />
+		</div>
+    </div>
+    <div class="col-lg-6 text-end rightcolumn">
+		<div class="phone_right">
+			<span>ЖКХ проблемы и<br/>отображение их статуса</span>
+			<img src="../img/phone_boy.png" alt="" class="animate__animated animate__pulse" />
+		</div>
+    </div>
+  </div>
+</div>
+</main>
+ </body>
+</html>

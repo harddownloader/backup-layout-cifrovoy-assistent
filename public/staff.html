@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title>COOP</title>
+
+	<link href="../css/bootstrap.min.css" rel="stylesheet">
+	<link href="../css/chats.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  </head>
+  <body>
+ <script>   
+const intervalIdPulse = setInterval(() => {
+        document.querySelectorAll('.animate__pulse').forEach((item) => {
+          //- console.log('item', item)
+          item.classList.remove('animate__pulse')
+          setTimeout(() => {
+            item.classList.add('animate__pulse')
+          }, 1000)
+        })
+      }, 10000)
+</script>
+
+<div class="container-fluid p-0 animate__animated animate__fadeIn">
+	<div class="row text-center header p-0">
+		<div class="col-12 logo"></div>
+		<h1 class="h1_style3">РЕШЕНИЕ ДЛЯ СОТРУДНИКОВ</h1>
+		<h3>Интеграция с корпоративными учётными системами</h3>
+	</div>
+	<div class="container-fluid p-0">
+		<div class="tripple_icon row p-0">
+			<div class="tripple_single_icon float-start sap_erp">SAP ERP</div>
+			<div class="tripple_single_icon float-end solman">Solman</div>
+			<div class="tripple_single_icon sap_srm">SAP SRM</div>
+		</div>
+	</div>
+	<div class="container-fluid main_coop p-0">
+		<div class="row ">
+			<div class="col-6 leftcolumn p-0">
+				<div class="coop_icons animate__animated animate__pulse">
+					<img src="../img/coop_icon_ozm.png" alt="" class="mx-auto" />
+					<span>Узнать статус<br/> заявки ОЗМ</span>
+				</div>
+			</div>
+			<div class="col-6 text-end rightcolumn p-0 ">
+				<div class="coop_icons animate__animated animate__pulse">
+					<img src="../img/coop_icon_errors.png" alt="" class="mx-auto" />
+					<span>Исправить ошибки при<br/> вводе заявки на платёж<br/>  или счёт-фактуры</span>
+				</div>
+			</div>
+			<div class="coop_second_row row p-0">
+				<div class="col-6 leftcolumn p-0">
+					<div class="coop_icons animate__animated animate__pulse">
+						<img src="../img/coop_icon_status.png" alt="" class="mx-auto" />
+						<span>Узнать<br/> статус заявки<br/> на потребность</span>
+					</div>
+				</div>
+				<div class="col-6 text-end rightcolumn p-0 ">
+					<div class="coop_icons animate__animated animate__pulse">
+						<img src="../img/coop_icon_service.png" alt="" class="mx-auto" />
+						<span>Узнайте статус обращения<br/> в ServiceDesk</span>
+					</div>
+				</div>
+			</div>
+			<div class="row coop_bottom_icons text-center p-0">
+				<div class="col-6 col-sm-4 p-0">
+					<div class="coop_icons animate__animated animate__pulse float-start">
+						<img src="../img/coop_icon_instruct.png" alt="" class="mx-auto" />
+						<span>Найти инструкцию,<br/> документ</span>
+					</div>
+				</div>
+				<div class="col-6 col-sm-4 p-0">
+					<div class="coop_icons animate__animated animate__pulse mx-auto">
+						<img src="../img/coop_icon_max.png" alt="" class="mx-auto" />
+						<span>Скорректировать<br/> лимиты платежей</span>
+					</div>
+				</div>
+				<div class="col-12 col-sm-4 p-0">
+					<div class="coop_icons animate__animated animate__pulse float-end">
+						<img src="../img/coop_icon_door.png" alt="" class="mx-auto" />
+						<span>Разобраться с<br/> проблемой входа в<br/> SAP системы</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+
+
+      
+  </body>
+</html>

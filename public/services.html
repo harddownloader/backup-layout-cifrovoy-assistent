@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title>Services</title>
+
+	<link href="../css/bootstrap.min.css" rel="stylesheet">
+	<link href="../css/chats.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  </head>
+  <body>
+ <script>   
+const intervalIdPulse = setInterval(() => {
+        document.querySelectorAll('.animate__pulse').forEach((item) => {
+          //- console.log('item', item)
+          item.classList.remove('animate__pulse')
+          setTimeout(() => {
+            item.classList.add('animate__pulse')
+          }, 1000)
+        })
+      }, 10000)
+</script>
+
+<main>
+	<div class="row text-center header animate__animated animate__fadeIn">
+		<div class="col-12 logo"></div>
+	</div>
+	<div class="container-fluid animate__animated animate__fadeIn">
+		<div class="row  top_metall p-0">
+			<div class="col-12 col-lg-12 order-lg-2 p-0 text-center"><h1 class="h1_style4">Решение для сервисов телекоммуникации</h1></div>
+		</div>
+	</div>
+	<div class="container-fluid main_services animate__animated animate__fadeIn">
+		<div class="row p-0">
+			<div class="col-12">
+					<div class="row p-0">
+						<div class="col-12 col-sm-12 p-0">
+							<div class="services_container mx-auto text-center animate__animated animate__pulse">
+								<div class="services_icon mx-auto ">
+									<img src="../img/service_icon_3.png" class="mx-auto" alt="" />
+								</div>
+								<span class="services_text">Как узнать номер</span>
+							</div>
+						</div>
+					</div>
+					<div class="row p-0 services_second_row">
+						<div class="col-6 col-sm-6 p-0 text-left">
+							<div class="services_container mx-auto text-center float-start animate__animated animate__pulse">
+								<div class="services_icon mx-auto">
+									<img src="../img/service_icon_2.png" class="mx-auto" alt="" />
+								</div>
+								<span class="services_text">Управление картой</span>
+							</div>
+						</div>
+						<div class="col-6 col-sm-6 p-0">
+							<div class="services_container mx-auto text-center float-end animate__animated animate__pulse">
+								<div class="services_icon mx-auto">
+									<img src="../img/service_icon_4.png" class="mx-auto" alt="" />
+								</div>
+								<span class="services_text">Позвони мне</span>
+							</div>
+						</div>
+					</div>
+					<div class="row p-0 services_third_row">
+						<div class="col-6 col-sm-6 p-0 text-left">
+							<div class="services_container mx-auto text-center float-start animate__animated animate__pulse">
+								<div class="services_icon mx-auto">
+									<img src="../img/service_icon_1.png" class="mx-auto" alt="" />
+								</div>
+								<span class="services_text">Изменение тарифа</span>
+							</div>
+						</div>
+						<div class="col-6 col-sm-6 p-0">
+							<div class="services_container mx-auto text-center float-end animate__animated animate__pulse">
+								<div class="services_icon mx-auto">
+									<img src="../img/service_icon_5.png" class="mx-auto" alt="" />
+								</div>
+								<span class="services_text">Как настроить интернет</span>
+							</div>
+						</div>
+					</div>
+					<div class="row p-0 services_last_row">
+						<div class="col-6 col-sm-6 p-0 text-left">
+								<span>Персонификация сервисов</span>
+						</div>
+						<div class="col-6 col-sm-6 p-0">
+							<div class="float-end">
+								<span>Фильтрация контента</span>
+							</div>
+						</div>
+					</div>
+			</div>
+		</div>
+
+	</div>
+</main>
+  </body>
+</html>

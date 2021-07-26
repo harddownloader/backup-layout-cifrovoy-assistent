@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title>Assist</title>
+
+	<link href="../css/bootstrap.min.css" rel="stylesheet">
+	<link href="../css/chats.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  </head>
+  <body>
+ <script>   
+const intervalIdPulse = setInterval(() => {
+        document.querySelectorAll('.animate__pulse').forEach((item) => {
+          //- console.log('item', item)
+          item.classList.remove('animate__pulse')
+          setTimeout(() => {
+            item.classList.add('animate__pulse')
+          }, 1000)
+        })
+      }, 10000)
+</script>
+
+<main >
+<div class="container-fluid main animate__animated animate__fadeIn">
+	<div class="row text-center header">
+		<div class="col-12 logo"></div>
+		<h1>РЕШЕНИЕ ДЛЯ ПОСТАВЩИКОВ</h1>
+		<h3>Интеграция с корпоративными учётными системами</h3>
+	</div>
+  <div class="row" style="margin:0;min-height:80vh;">
+    <div class="col-lg-6 leftcolumn">
+      <div class="icons_line">
+		<div class="icon_cart single_icon  animate__animated animate__pulse"></div><div class="icon_card single_icon  animate__animated animate__pulse"></div><div class="icon_man single_icon animate__animated animate__pulse"></div><div class="icon_gear single_icon  animate__animated animate__pulse"></div>
+	  </div>
+	  <div class="leftcolumn_content">
+		<h4>Ответы на часто задаваемые вопросы по закупкам:</h4>
+		<ul class="list_item">
+			<li><i class="bubochka animate__animated animate__pulse"></i> участие в закупочных процедурах;</li>
+			<li><i class="bubochka animate__animated animate__pulse"></i> квалификационные анкеты, причины отклонения;</li>
+			<li><i class="bubochka animate__animated animate__pulse"></i> работа в личном кабинете поставщика;</li>
+			<li><i class="bubochka animate__animated animate__pulse"></i> технические проблемы;</li>
+			<li><i class="bubochka animate__animated animate__pulse"></i> другие</li>
+		</ul>
+	  </div>
+    </div>
+    <div class="col-lg-6 text-end rightcolumn">
+		<div class="icons_mozg"></div>
+		<h4>Решения для зарегистрированных поставщиков:</h4>
+		<div class="rightcolumn_blocks">
+			<h5>Статус квалификации</h5>
+			<p>Вопросы по процедуре прохождения <br/>общей и категорийной квалификации;</p>
+		</div>
+		<div class="rightcolumn_blocks">
+			<h5>Статус платежа</h5>
+			<p>Информация по статусу оплаты за <br/>оказанные услуги или поставленные ТМЦ.</p>
+		</div>
+    </div>
+  </div>
+</div>
+
+
+
+</main>
+
+
+
+      
+  </body>
+</html>
